@@ -1,0 +1,19 @@
+name: Deploy test-fleet client to Cloudflare Pages
+# TEST CLIENTS ONLY. Branch <slug>-staging -> https://<slug>-staging.testfleet-XXX.pages.dev ; <slug>-prod -> https://<slug>-prod...
+on:
+  push:
+    branches: ['*-staging', '*-prod']
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 21779b260eff4cd8fdd71c920eaec8ab
+        run: |
+          mkdir -p /tmp/out && rsync -a --exclude .git --exclude .github --exclude README.md ./ /tmp/out/
+          npx -y wrangler@3 pages deploy /tmp/out --project-name testfleet --branch "${GITHUB_REF_NAME}" --commit-dirty=true
