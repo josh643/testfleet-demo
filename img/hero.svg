@@ -1,1 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400"><rect width="800" height="400" fill="#cde"/><text x="400" y="210" font-size="40" text-anchor="middle">Test Salon</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Colorful abstract salon illustration</title>
+  <desc id="desc">A bright, playful portrait with sweeping plum hair against a peach and lilac background.</desc>
+  <defs>
+    <linearGradient id="backdrop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff1c8"/>
+      <stop offset="1" stop-color="#e8c8ef"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#71336f"/>
+      <stop offset="1" stop-color="#351d50"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="36" fill="url(#backdrop)"/>
+  <circle cx="600" cy="110" r="52" fill="#ffbb59"/>
+  <circle cx="156" cy="376" r="92" fill="#ff8a73" opacity=".78"/>
+  <path d="M130 500c18-103 96-153 183-153 81 0 142 56 157 153H130Z" fill="#bd3970"/>
+  <path d="M295 364c-27-41-38-102-21-166 20-77 81-122 155-117 83 5 140 70 132 157-4 47-25 83-59 116-25 24-46 49-46 83H306c9-30 7-53-11-73Z" fill="url(#hair)"/>
+  <path d="M387 192c19-47 80-55 112-20 25 28 19 77 2 112-12 23-30 48-55 56-23 8-50-6-65-26-18-25-19-91 6-122Z" fill="#f6b38e"/>
+  <path d="M363 194c22-76 104-108 165-67 26 17 43 46 45 77-28-11-49-30-62-53-20 47-72 77-136 75l-12-32Z" fill="#49265f"/>
+  <path d="M418 262c12 7 25 8 37 1" fill="none" stroke="#8c4556" stroke-linecap="round" stroke-width="5"/>
+  <path d="M473 244h1" fill="none" stroke="#49265f" stroke-linecap="round" stroke-width="8"/>
+  <path d="M518 282c22-11 34-29 41-53 25 50 8 112-34 150-17-25-20-60-7-97Z" fill="#71336f"/>
+  <circle cx="448" cy="311" r="12" fill="#ffca57" stroke="#fff1c8" stroke-width="5"/>
+  <path d="M88 104c37-27 79-28 112-5M595 420c29-23 65-28 99-13" fill="none" stroke="#fffaf0" stroke-linecap="round" stroke-width="12" opacity=".9"/>
+  <path d="m198 151 9 18 19 3-14 13 3 19-17-10-17 10 4-19-14-13 19-3 8-18ZM674 277l7 14 15 2-11 10 3 15-14-8-14 8 3-15-11-10 15-2 7-14Z" fill="#fffaf0"/>
+</svg>
